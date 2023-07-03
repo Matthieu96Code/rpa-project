@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pockets</h1>
+
+<div id="pockets">
+  <% @pockets.each do |pocket| %>
+    <%= render pocket %>
+    <p>
+      <%= link_to "Show this pocket", pocket %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pocket", new_pocket_path %>

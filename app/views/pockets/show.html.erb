@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @pocket %>
+
+<div>
+  <%= link_to "Edit this pocket", edit_pocket_path(@pocket) %> |
+  <%= link_to "Back to pockets", pockets_path %>
+
+  <%= button_to "Destroy this pocket", @pocket, method: :delete %>
+</div>
