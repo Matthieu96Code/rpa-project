@@ -7,8 +7,10 @@
     <%= render group %>
     <p>
       <%= link_to "Show this group", group %>
+      <%= link_to "pocket", group_pockets_path(group) %>
     </p>
   <% end %>
 </div>
 
 <%= link_to "New group", new_group_path %>
+

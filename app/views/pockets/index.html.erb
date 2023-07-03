@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Pockets</h1>
-
+<%= link_to "Back to groups", groups_path %>
 <div id="pockets">
   <% @pockets.each do |pocket| %>
     <%= render pocket %>
